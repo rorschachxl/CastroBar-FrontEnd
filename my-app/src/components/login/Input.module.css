@@ -1,0 +1,19 @@
+.inputfield {
+    position: relative; 
+    width: 65%;
+    padding:10px 2px 10px 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    background-color: #DDE3CA;
+    font-size: 18px;
+    border-color: rgba(28, 28, 28, 0.5);
+    border-radius: 8px; 
+    outline:none;
+    text-align: start;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.inputfield:hover {
+    border-bottom-color: #453b32;
+}

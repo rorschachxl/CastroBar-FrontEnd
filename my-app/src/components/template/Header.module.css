@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    background-color: #3D3C3B; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center; 
+    width: 100%;
+    height: 55px;
+    border-radius: 9px;
+    box-shadow: 0 0 5px 1px black;
+    margin: 0%;
+    align-items: center;
+}
+
+.CastroBarImage img{
+    height: 95px;
+    width: 110px; 
+    padding: 0;
+    margin: -20px; 
+    display: block;
+}
+
+.CastroBarImage {
+    float: left;
+    width: 60px;
+    height: 95px;
+}
+
