@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    font-family: "Source Sans 3", system-ui;
+}
+
+.flex{
+    display: flex;
+}
+
+.navbar{
+    background-color: gray;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.sidebar{
+    background-color: blanchedalmond;
+    width: 14rem;
+    height: calc(100vh);
+    border-right: 1px solid gray;
+    ul{
+        list-style: none;
+        padding: 1rem 2rem;
+        li{
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
