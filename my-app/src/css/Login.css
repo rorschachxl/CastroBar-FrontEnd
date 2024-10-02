@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DDE3CA;
+    color: #000;
+}
+
+.opacity-41 {
+    filter: opacity(0.41);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-height: 100vh;
+    background-color: rgb(216, 193, 215, 41%);
+}
+
+.login-box {
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    color: #000000;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px 1px black, inset 0px 20px rgba(0, 0, 0, 0.1);  
+}
+
+.logo {
+    width: 105px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.input-group {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #000000;
+}
+
+.eye-icon {
+    color: #000;
+    position: absolute;
+    right: 10px;
+    width: 26.28px;
+    height: 34.49px;
+    cursor: pointer;
+}
+
+.check-icon {
+    color: #00A699;
+    position: absolute;
+    right: 10px;
+    width: 26.28px;
+    height: 34.49px;
+    cursor: pointer;
+}
+
+.error-icon {
+    color: #a61900;
+    position: absolute;
+    right: 10px;
+    width: 26.28px;
+    height: 34.49px;
+    cursor: pointer;
+}
+
+.hide-icon {
+    position: absolute;
+    right: 10px;
+    width: 0px;
+    height:0px;
+    cursor: pointer;
+}
+
+.icon {
+    color: #000;
+    position: absolute;
+    left: 10px;
+    width: 26.28px;
+    height: 34.49px;
+}
+
+
+
+.input-group {
+    position: relative; 
+}
+
+.error-message {
+    position: absolute;
+    background-color: #3D3C3B;
+    color: #DDE3CA;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    top: -30px; 
+    left: 100%; 
+    z-index: 100;
+    width: 70%; 
+    display: flex;
+    align-items: center;  
+    gap: 10px; 
+    box-sizing: border-box; 
+    transform: translateX(10px); 
+}
+
+.error-message::before {
+    content: "⚠️"; 
+    font-size: 1.2rem; 
+    color: #F0A500; 
+    margin-right: 5px; 
+}
+
+.alert-item {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.check-icon {
+    z-index: 99;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .h2 {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .input-group label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .eye-icon, .check-icon, .hide-icon {
+        right: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="text"], input[type="password"], input[type="number"] {
+        font-size: 16px;
+        padding: 8px 8px 8px 5px;
+    }
+
+    .login-button {
+        font-size: 18px;
+    }
+
+    .error-message {
+        top: -40px;
+        left: 0;
+        width: 80%;
+        transform: translateX(0);
+    }
+
+    .error-message-arrow {
+        left: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+        height: 70px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+
+    .input-group label {
+        align-items: center;
+    }
+
+    .eye-icon, .check-icon, .hide-icon {
+        right: 5px;
+        width: 18px;
+        height: 18px;
+    }
+
+    input[type="text"], input[type="password"], input[type="number"] {
+        padding: 6px 6px 6px 35px;
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 16px;
+    }
+
+    .error-message {
+        width: 80%;
+    }
+}
+
