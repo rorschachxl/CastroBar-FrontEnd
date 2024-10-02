@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import styles from './InputLogin.module.css';
+import PropTypes from "prop-types";
+import React from "react";
+import styles from "./InputLogin.module.css";
 
 const InputLogin = ({ type, placeholder, value, onChange }) => {
     return (
@@ -15,17 +15,17 @@ const InputLogin = ({ type, placeholder, value, onChange }) => {
 };
 
 InputLogin.propTypes = {
-    type: PropTypes.oneOf(['password', 'text']).isRequired, 
+    type: PropTypes.oneOf(["password", "text"]).isRequired,
     placeholder: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired, 
+    onChange: PropTypes.func.isRequired,
 };
 
 InputLogin.defaultProps = {
-    value: '',
+    type: "text",
+    placeholder: "Ingrese valor",
+    value: "",
+    onChange: () => { },
 };
 
 export default InputLogin;
-
-
-
