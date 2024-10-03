@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'universal-cookie';
-import '../css/Login.css';
+import '../css/Template.css';
 import Header from '../components/template/Header';
+import Sidebar from '../components/template/Sidebar';
 
 function Template() {
     const cookies = useMemo(() => new Cookies(), []);
@@ -15,15 +16,17 @@ function Template() {
 
     return (
         <>
-            <Header/>
-        <div className="containerMenu">
-            <br />
-            <h5>ID: {cookies.get('id')}</h5>
-            <br />
-            <h5>Username: {cookies.get('number')}</h5>
-            <br />
-            <h5>Password: {cookies.get('password')}</h5>
-            <br />
+        <div className="container">
+            <Header />
+            <div className="main-content">
+                <Sidebar />
+                <div className="content-area">
+                    <form>
+                        <input type="text" placeholder="Ingrese su nombre" />
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </div>
+            </div>
         </div>
         </>
     );

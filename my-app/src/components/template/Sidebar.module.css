@@ -1,0 +1,96 @@
+.sidebar {
+    width: 250px;
+    background-color: #eef0d1;
+    padding: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 1000;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 0 15px 15px;
+}
+
+.Section {
+    margin-bottom: 10px;
+}
+
+.roleTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C1C1C;
+    margin-bottom: 10px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 600 bold;
+    margin-top: 20px;
+    color: #1C1C1C;
+    
+}
+
+.sidebarItem {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1C1C1C;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+}
+
+.link:hover {
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 5px 10px 5px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+.iconUser {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #3D3C3B;
+    color: DDE3CA;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.profileIcon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+hr {
+    color: rgb(202, 196, 208);
+}
+ul {
+    padding-left: 10px;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        position: fixed;
+        width: 150px;
+    }
+}

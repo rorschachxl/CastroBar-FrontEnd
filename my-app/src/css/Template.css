@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DDE3CA;
+    color: #000;
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.opacity-41 {
+    filter: opacity(0.41);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza el header y el contenido principal en columna */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.main-content {
+    display: flex; /* Organiza el sidebar y el contenido en una fila */
+    flex: 1; /* Toma el espacio restante bajo el header */
+}
+
+.content-area {
+    flex: 1; /* El área de contenido ocupará todo el espacio restante */
+    padding: 20px; /* Espaciado interno */
+    overflow-y: auto; /* Permite el desplazamiento si hay mucho contenido */
+}
+

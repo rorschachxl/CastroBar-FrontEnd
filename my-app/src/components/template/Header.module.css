@@ -26,3 +26,9 @@
     height: 95px;
 }
 
+@media (max-width: 800px) {
+    .header {
+        position: fixed;
+        height: 30px;
+    }
+}
