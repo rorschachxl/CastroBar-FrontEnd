@@ -1,9 +1,12 @@
-const Inicio =() =>{
-    return(
+
+import CajasVentas from '../componentes/CajasVentas';
+
+const Inicio = () => {
+    return (
         <div>
-            <p>Inicio</p>
+            <p>Hola</p>
         </div>
-    )
+    );
 }
 
-export default Inicio
+export default Inicio;
