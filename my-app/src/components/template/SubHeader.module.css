@@ -1,0 +1,10 @@
+.subheader {
+    position: fixed;
+    background-color: #DDE3CA;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    margin: 0%;
+    align-items: center;
+    display: flex;
+}

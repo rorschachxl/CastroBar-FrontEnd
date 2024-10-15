@@ -92,7 +92,7 @@ const Sidebar = () => {
             <div className={styles.userSection}>
                 <div className={styles.userProfile}>
                     <img src={RoleIcon} alt="Usuario" className={styles.iconUser} />
-                    <span>{user.name}</span>
+                    <h1>{user.name}</h1>
                 </div>
             </div>
         </div>

@@ -1,0 +1,35 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DDE3CA;
+    color: #000;
+}
+
+.opacity-41 {
+    filter: opacity(0.41);
+}
+
+.recomendados-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    justify-content: space-between; 
+}
+
+.recomendados-title {
+    font-size: 24px;           /* Tamaño de la fuente */
+    font-weight: bold;         /* Negrita */
+    margin: 0;   
+    display: flex;
+}
+
+.content{
+    margin-left: 20px;
+    width: 80%;
+    overflow-y: auto ;
+    height: calc(100vh - 60px);
+    position: relative;
+}

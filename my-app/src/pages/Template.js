@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import '../css/Template.css';
 import Header from '../components/template/Header';
-import Sidebar from '../components/template/Sidebar';
+import NavBar from '../components/client/Navbar.jsx';
 
 function Template() {
     const cookies = useMemo(() => new Cookies(), []);
@@ -16,18 +16,7 @@ function Template() {
 
     return (
         <>
-        <div className="container">
-            <Header />
-            <div className="main-content">
-                <Sidebar />
-                <div className="content-area">
-                    <form>
-                        <input type="text" placeholder="Ingrese su nombre" />
-                        <input type="submit" value="Enviar" />
-                    </form>
-                </div>
-            </div>
-        </div>
+            <NavBar  />
         </>
     );
 }

@@ -1,0 +1,31 @@
+.nav-wrapper {
+    position: relative; /* Cambiado a relativo para que se ajuste a su contenedor */
+    z-index: 10; /* Asegúrate de que esté encima del subheader */
+    margin-top: 55px;
+}
+
+.navBg {
+    background-color: transparent; /* Fondo transparente */
+    padding: 10px 0; /* Espaciado vertical */
+    display: flex; /* Alineación horizontal */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.nav-item {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 0 15px; /* Espaciado lateral */
+    transition: color 0.3s, font-size 0.3s; /* Transiciones suaves para color y tamaño */
+    font-size: 16px; /* Tamaño de fuente por defecto */
+}
+
+.separator {
+    color: #fff; /* Color del separador */
+    padding: 0 10px; /* Espaciado alrededor del separador */
+    font-size: 20px; /* Tamaño del separador */
+}
+
+.nav-item:hover {
+    color: black; /* Color al pasar el mouse */
+    font-size: 18px; /* Tamaño más grande al pasar el mouse */
+}
