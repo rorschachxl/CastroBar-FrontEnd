@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Mantiene los elementos en fila */
+    flex-wrap: nowrap; /* Evita que los elementos se vayan a una nueva línea */
+    padding: 20px;
+    gap: 20px; /* Espacio entre cada caja */
+    width: 150%; /* Asegura que el contenedor tenga al menos el ancho de la pantalla */
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  

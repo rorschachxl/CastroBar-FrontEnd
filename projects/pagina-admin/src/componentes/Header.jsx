@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Header.module.css';
+import styles from '../diseños/Header.module.css';
 import CastroBarImage from '../img/CastroBar.png'; 
 
 

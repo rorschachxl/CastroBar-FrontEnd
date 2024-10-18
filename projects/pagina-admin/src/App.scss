@@ -7,21 +7,24 @@ body {
 
 .app-container {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
+  overflow: hidden;
 }
 
 .main-content {
   display: flex;
   flex: 1;
+  flex-direction: column;
   margin-top: 60px; 
 }
 
 .content {
-  margin-left: 300px;
-  margin-top: 60px; 
+  margin-left: 300px; /* Espacio para el sidebar */
   overflow-y: auto;
-  height: calc(100vh - 60px); 
-  position: relative;
+  overflow-x: auto; 
+  height: calc(100vh - 60px);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .active {
