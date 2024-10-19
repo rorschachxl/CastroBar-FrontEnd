@@ -1,9 +1,13 @@
-const Roles =() =>{
-    return(
-        <div>
-            <p>Inicio</p>
-        </div>
-    )
-}
+import React from "react";
+import TablaUsa from "../componentes/componentesRol/TablaUsuarios"
 
-export default Roles
+const TablaUs =()=>{
+    return (
+        <div>
+          <h1>Gestión de Usuarios</h1>
+          <TablaUsa />
+        </div>
+      );
+    };
+    
+    export default TablaUs;
