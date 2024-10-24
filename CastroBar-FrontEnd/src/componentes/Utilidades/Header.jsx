@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../estilos/Utilidades/Header.scss';
 import CastroBarImage from '../../img/CastroBar.png'; 
-
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Header = () => {
 return (
