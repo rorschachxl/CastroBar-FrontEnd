@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import React from "react";
-import styles from "../diseños/InputLogin.module.css";
+import "../../estilos/Login/InputLogin.scss";
 
 const InputLogin = ({ type, placeholder, value, onChange }) => {
     return (
         <input
-            className={styles.inputfield}
+            className="inputfield"
             type={type}
             placeholder={placeholder}
             value={value}

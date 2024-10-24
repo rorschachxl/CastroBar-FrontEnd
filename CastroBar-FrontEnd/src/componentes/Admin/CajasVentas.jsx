@@ -25,21 +25,21 @@ const CajasVentas = () => {
     <div className="container">
       <div className="box">
         <div className="boxContent">
-          <img src={VentasIcon} alt="Ventas Dia Icon" className="icon" />
+          <img src={VentasIcon} alt="Ventas Dia Icon" className="icondata" />
           <p className="text">Ventas Dia</p>
           <p className="number">{ventas.ventasDia}</p>
         </div>
       </div>
       <div className="box">
         <div className="boxContent">
-          <img src={VentasIcon} alt="Ventas Semana Icon" className="icon" />
+          <img src={VentasIcon} alt="Ventas Semana Icon" className="icondata" />
           <p className="text">Ventas Semana</p>
           <p className="number">{ventas.ventasSemana}</p>
         </div>
       </div>
       <div className="box">
         <div className="boxContent">
-          <img src={VentasIcon} alt="Ventas Mes Icon" className="icon" />
+          <img src={VentasIcon} alt="Ventas Mes Icon" className="icondata" />
           <p className="text">Ventas Mes</p>
           <p className="number">{ventas.ventasMes}</p>
         </div>

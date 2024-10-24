@@ -1,0 +1,15 @@
+/* Dashboard.scss */
+.dashboard {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 240px; /* Ajusta el tamaño del sidebar */
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 20%;
+  }
+  

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import tinycolor from 'tinycolor2';
-import styles from '../diseños/Button.module.css'
+import '../../estilos/Login/Button.scss'
 
 
 const Button = ({label = "Botón", backgroundColor = "#3D3C3B", color = "#DDE3CA", href = null, onClick }) => {
@@ -19,7 +19,7 @@ if (href) {
     return (
         <a 
             href={href} 
-            className={styles.button} 
+            className="button" 
             style={buttonStyles}
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)}
@@ -31,7 +31,7 @@ if (href) {
 
 return (
     <button
-        className={styles.button}
+        className="button"
         style={buttonStyles}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

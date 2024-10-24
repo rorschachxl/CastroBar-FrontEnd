@@ -1,8 +1,7 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Sidebar from './componentes/Utilidades/Sidebar'
-import Header from './componentes/Utilidades/Header';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './App.scss';
-import { UserContext } from './componentes/Utilidades/Usercontext';
 import Ayuda from './paginas/Ayuda';
 import Configuraciones from './paginas/Configuraciones';
 import Informes from './paginas/Informes';
@@ -12,36 +11,42 @@ import Menu from './paginas/Menu';
 import Mesas from './paginas/Mesas';
 import Recetas from './paginas/Recetas';
 import Roles from './paginas/Roles';
-//import dash from '../../login/src/App'
+import IndexPage from './Routes/Index';
+import Login from './componentes/Login/Login';
+import DashboardLayoutBasic from './Routes/Dashboard';
 
+const queryClient = new QueryClient();
 export function App() {
-  const user = { name: 'Admin' };
+  return (
+    <QueryClientProvider client={queryClient}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<IndexPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/*" element={<DashboardRouter />} />
+          </Routes>
+        </Router>
+    </QueryClientProvider>
+  );
+}
+
+function DashboardRouter() {
+  const location = useLocation();
 
   return (
-    <UserContext.Provider value={{ user }}>
-      <Router>
-        <div className='app-container'>
-          <Header />
-          <div className='main-content'>
-            <Sidebar />
-            <div className='content'>
-              <Routes>
-                {/*<Route path='/iniciarSesion' element={dash}/>*/}
-                <Route path="/" element={<Inicio />} />
-                <Route path="/Ayuda" element={<Ayuda />} />
-                <Route path="/Configuraciones" element={<Configuraciones />} />
-                <Route path="/Informes" element={<Informes />} />
-                <Route path="/Inventario" element={<Inventario />} />
-                <Route path="/Menu" element={<Menu />} />
-                <Route path="/Mesas" element={<Mesas />} />
-                <Route path="/Recetas" element={<Recetas />} />
-                <Route path="/Roles" element={<Roles />} />
-              </Routes>
-            </div>
-          </div>
-        </div>
-      </Router>
-    </UserContext.Provider>
+    <DashboardLayoutBasic currentPath={location.pathname}>
+      <Routes>
+        <Route path="/dashboard" element={<Inicio />} />
+        <Route path="/mesas" element={<Mesas />} />
+        <Route path="/inventario" element={<Inventario />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/recetas" element={<Recetas />} />
+        <Route path="/roles" element={<Roles />} />
+        <Route path="/proveedores" element={<Ayuda />} />
+        <Route path="/informes" element={<Informes />} />
+        <Route path="/configuraciones" element={<Configuraciones />} />
+      </Routes>
+    </DashboardLayoutBasic>
   );
 }
 

@@ -27,7 +27,7 @@ const GraficoPlatos = () => {
   return (
     <div className="graphContainer">
       <h3>Ventas de Platos</h3>
-      <Pie data={data} options={{ responsive: true }} />
+      <Pie data={data} options={{ responsive: true }} sx={{with:20}} />
     </div>
   );
 };
